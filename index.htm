@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMORT | Fitness Gym</title>
+    <link rel="Icon" href="assets/images/nav-icon.png">
+
+    <!--==== Bootsrap Css ====-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--==== Bootsrap Js ====-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--==== Main css ====-->
+    <link rel="stylesheet" href="assets/Css file/style.css">
+    <link rel="stylesheet" href="assets/Css file/mediaQuery.css">
+
+    <!--==== Icons ====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+       <!--=====animation cdn====-->    
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--==== font cnd====-->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--==== Home Start ====-->
+    <div id="carouselExampleControls" class="carousel slide banner" id="home" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/bg-2.jpg" class="d-block w-100" alt="...">
+            <div class="info">
+              <h2>GIVE YOUR BODY THE BEST FORM</h2>
+              <h1>NO MATTER <br> YOUR FITNESS <br>LEVEL.</h1>
+              <section class="d-flex  justify-content-center  justify-content-sm-start">
+                  <a href="home.htm"><button class="getStartBtn">Get Start</button></a>
+                  <a href="home.htm"><button><i class="ri-arrow-right-up-line"></i></button></a>
+              </section>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/bg-1.png" class="d-block w-100" alt="..." width="100%">
+            <div class="info" style="justify-content: end; " >
+              <h2>FITNESS FOR EVERYONE</h2>
+              <h1  >SHAPING YOUR <br> MUSCLES.</h1>
+              <section class="d-flex  justify-content-center  justify-content-sm-start ">
+                <a href="home.htm"><button class="getStartBtn">Get Start</button></a>
+                <a href="home.htm"><button><i class="ri-arrow-right-up-line"></i></button></a>
+              </section>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev sliderBtn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next sliderBtn-2" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--==== Home End ====-->
+
+        <!--==== Navbar Start ====-->
+        <nav class="ps-5 pe-5 pt-0 pb-0 navbar wow animate__animated animate__fadeInDown ">
+            <div class="logo" style="width: 0px;margin-top: 5px;">
+                <a href="#"><img src="assets/images/gymort_logo.png" alt="...."></a>
+            </div>
+
+            
+
+            <div class="menu-list">
+              <ul class="ps-0">
+                <li><a href="#home"><i class="ri-home-4-line"></i> Home</a></li>
+                <li><a href="#About"><i class="ri-information-line"></i> About</a></li>
+                <li><a href="#testimonial"><i class="ri-chat-3-line"></i> Testimonials</a></li>
+                <li><a href="#blog"><i class="ri-article-line"></i> Blogs</a></li>
+                <li><a href="#contact"><i class="ri-contacts-book-2-line"></i> Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="buttons d-flex ">
+                <button type="button" class="Toggle me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                <a href="# " style="text-decoration: none;" >
+                  <i class="ri-list-check"></i>
+                </a>
+              </button>
+
+              <button type="button" class="search-icon" data-bs-toggle="modal" data-bs-target="#Modal">
+                <a href="# " style="text-decoration: none;" >
+                  <i class="ri-search-2-line"></i>
+                </a>
+              </button>
+          </div>
+
+        </nav>
+        <!--==== Navbar End ====-->
+
+        <!--==== Searchbar model Start ====-->
+        <div class="modal fade" tabindex="-1" id="Modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <input type="text" placeholder="Search...">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <button type="button" class="btn SearchBtn Search">Search</button>
+            </div>
+          </div>
+        </div>
+        <!--==== Searchbar model  End ====-->
+
+        <!--==== Offcanvas Start ====-->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Menu List</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" style="top: 20px;right: 20px;"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="offcanvas-menu-list">
+              <ul>
+                <li><a href="#home" class="nav-link" data-target="home"><i class="ri-home-4-line"></i> Home</a></li>
+                <li><a href="#About" class="nav-link" data-target="About"><i class="ri-information-line"></i> About</a></li>
+                <li><a href="#testimonial" class="nav-link" data-target="testimonial"><i class="ri-chat-3-line"></i> Testimonials</a></li>
+                <li><a href="#blog" class="nav-link" data-target="blog"><i class="ri-article-line"></i> Blogs</a></li>
+                <li><a href="#contact" class="nav-link" data-target="contact"><i class="ri-contacts-book-2-line"></i> Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!--==== Offcanvas End ====-->
+
+        <!--==== What we offer Start ====-->
+        <div class="container mt-5 pt-5">
+          <div class="offerPage">
+            <h3 class="wow animate__animated animate__fadeInUp">What We Offer</h3>
+            <h1 class="wow animate__animated animate__fadeInUp">THE BEST STANDARDS ANYWHERE</h1>
+
+            <div class="offerPageInfo mt-5 pt-5">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3 offerContent wow animate__animated animate__fadeInUp"> 
+                    <i class="fas fa-dumbbell"></i>
+                    <section>
+                      <h2>Skilled Trainers</h2>
+                      <p>Our trainers are well-experienced. 
+                        They help you improve with guided support and consistent motivation.</p>
+                    </section>
+                  </div>
+                  <div class="col-12  col-md-6 col-lg-3 offerContent wow animate__animated animate__fadeInUp">
+                    <i class="fas fa-cogs"></i>
+                    <section>
+                      <h2>Quality Equipment</h2>
+                      <p>We offer top-quality machines and tools. Everything
+                         you need is here to support your fitness journey.</p>
+                    </section>
+                  </div>
+                  <divz class="col-12  col-md-6 col-lg-3 offerContent wow animate__animated animate__fadeInUp">
+                    <i class="fas fa-shower"></i>
+                    <section>
+                      <h2>Shower Cabins</h2>
+                      <p>Clean and comfortable shower cabins are available. 
+                        Refresh yourself after your workout with ease.</p>
+                    </section>
+                  </divz>
+                  <div class="col-12  col-md-6 col-lg-3 offerContent wow animate__animated animate__fadeInUp">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <section>
+                      <h2>Sport Nutrition</h2>
+                      <p>Get access to nutrition tips and products. 
+                        Fuel your fitness goals with the right support and diet.</p>
+                    </section>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--==== What we offer End ====-->
+
+        <!--==== Demo Booking page Start ====-->
+          <div class="container-fluid p-0 pb-5 pt-5 mt-5" id="About" style="overflow: hidden;">
+            <div class="row demoBooking" >
+              <div class="col-12 col-sm-6 p-0 demoBooking-content-img" style="height: 565px;">
+                <section>
+                  <h2>GROUP TRAINING</h2>
+                  <a href=""><i class="ri-arrow-right-up-line"></i></a>
+                </section>
+              </div>
+
+              <div class="col-12  col-sm-6 order-3 order-md-2 p-0 demoBooking-content-img2" style="height: 565px;">
+                <section>
+                  <h2>PERSONAL TRAINING</h2>
+                  <a href=""><i class="ri-arrow-right-up-line"></i></a>
+                </section>
+              </div>
+
+              <div class="col-12 col-lg-4 order-2 order-md-3 p-5 demoBooking-content" style="background-color: black;height: auto;">
+                <h3 class="wow animate__animated animate__fadeInUp">MEET OUR BEST PROGRAM FOR YOUR BEST RESULTS.</h3>
+                <p class="mt-3 wow animate__animated animate__fadeInUp">We focus on guided, structured training to help you improve faster. Our programs are varied and 
+                  designed to keep you engaged and progressing.</p>
+                  <p class="wow animate__animated animate__fadeInUp">Our sessions are well-planned and time-efficient. You'll experience effective exercises 
+                    that support growth, strength, and overall wellness.</p>
+                     <section class="d-flex  justify-content-center  justify-content-sm-start wow animate__animated animate__fadeInUp">
+                      <button class="bookingBtn"><a href="#contact">Book a Demo</a></button>
+                      <button><i class="ri-arrow-right-up-line"></i></button>
+                  </section>
+              </div>
+  
+            </div>
+          </div>
+        <!--==== Demo Booking page end ====-->
+
+        <!--==== Our Process Page Start ====-->
+        <div class="container mt-5 pt-5">
+          <div class="ourProcess">
+            <h3 class="wow animate__animated animate__fadeInUp">Our Process</h3>
+            <h1 class="wow animate__animated animate__fadeInUp">CHANGE YOUR HABITS FOR BETTER</h1>
+            <p class="wow animate__animated animate__fadeInUp">A big change starts with a small step. Our expert team will create a special program
+               following your health and body needs. Start it now.</p>
+
+               <div class="row justify-content-md-center justify-content-xl-between wow animate__animated animate__fadeInUp">
+                <div class="col-12 col-md-6 col-xl-4 ourProcess-content mt-5 pt-3">
+                    <div class="circleBorder m-auto">
+                      <div class="img"><img src="assets/images/processImg1.jpg" alt=""></div>
+                    </div>
+                    <h2>MOTIVATE</h2>
+                    <h5>We inspire you to push beyond limits with energy and focus. Every 
+                      session is designed to build confidence and drive.</h5>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 ourProcess-content mt-5 pt-3">
+                  <div class="circleBorder m-auto">
+                    <div class="img"><img src="assets/images/processImg2.png" alt=""></div>
+                  </div>
+                  <h2>WORKOUT</h2>
+                    <h5>Get strong with well-structured workouts that challenge and support your 
+                      progress. We focus on technique and consistency.</h5>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4 ourProcess-content mt-5 pt-3">
+                <div class="circleBorder m-auto">
+                  <div class="img"><img src="assets/images/processImg3.jpg" alt=""></div>
+                </div>
+                <h2>RESULTS</h2>
+                    <h5>See real changes with programs that 
+                      deliver. We help you stay on track and reach your goals faster.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--==== Our Process Page End ====-->
+        
+        <!--==== Video Player Strat ====-->
+        <div class="container-fluid mt-5 pt-5 p-0">
+          <div class="videoPlayerBanner  d-flex justify-content-center align-items-center">
+            <a href="https://www.youtube.com/@BlueStarNutraceuticals/videos" target="_blank" class="play-button-container">
+              <div class="neon-circle">
+                <div class="play-icon"></div>
+                <div class="glossy"></div>
+              </div>
+              <div class="rotating-text">
+                <svg viewBox="0 0 200 200">
+                  <defs>
+                    <path id="circlePath" d="M 100, 100 m -90, 0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0" />
+                  </defs>
+                  <text>
+                    <textPath href="#circlePath" startOffset="0%">
+                      PLAY NOW • PLAY NOW • PLAY NOW •PLAY NOW •PLAY NOW • 
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--==== Video Player End ====-->
+
+        <!-- ==== Achivements Number  start ====-->
+         <div class="container">
+            <div class="row Achivements">
+              <div class="col-12 col-sm-6  col-lg-3 Achivements-content wow animate__animated animate__fadeInUp">
+                <span>08</span>
+                <h1>08</h1>
+                <p>Years of Experience</p>
+              </div>
+
+              <div class="col-12 col-sm-6  col-lg-3 Achivements-content wow animate__animated animate__fadeInUp">
+                <span>20+</span>
+                <h1>20+</h1>
+                <p>Skilled trainers</p>
+              </div> 
+
+              <div class="col-12 col-sm-6  col-lg-3 Achivements-content wow animate__animated animate__fadeInUp">
+                <span>8K+</span>
+                <h1>8K+</h1>
+                <p>Calories Burned</p>
+              </div>
+
+              <div class="col-12 col-sm-6  col-lg-3  Achivements-content wow animate__animated animate__fadeInUp">
+                <span>1.1k</span>
+                <h1>1.1k</h1>
+                <p>Happy Members</p>
+              </div>
+            </div>
+         </div>
+        <!-- ==== Achivements Number  End ====-->
+
+         <!--====Our trainer Page Start====-->
+         <div class="container mt-5 pt-5">
+          <div class="ourTrainer">
+            <h3 class="wow animate__animated animate__fadeInUp">Our Trainers</h3>
+            <h1 class="wow animate__animated animate__fadeInUp">MEET OUR SKILLED TEAM</h1>
+
+            <div class="row ourTrainer-container justify-content-xl-between mt-5 pt-5">
+             
+              <div class="col-12  col-lg-6 col-xl-3 mt-lg-0 mt-xl-0 ourTrainer-content">
+                <div class="img">
+                  <img src="assets/images/trainers_1.png" alt="">
+                </div>
+                <h2> Alex Carter</h2>
+                <p>Senior Strength & Cardio trainer</p>
+                <button class="socialMediaBtns w-100 d-flex justify-content-center">
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-instagram-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;">   <i class="ri-twitter-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-youtube-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-linkedin-box-fill"></i></a>
+                </button>
+              </div>
+
+              <div class="col-12 col-lg-6 col-xl-3 mt-5 mt-lg-0 mt-xl-0 mt-5 ourTrainer-content">
+                <div class="img">
+                <img src="assets/images/trainers_2.png" alt="">
+                </div>
+                <h2>Emily Brooks</h2>
+                <p>Power Yoga trainer</p>
+                <button class="socialMediaBtns w-100 d-flex justify-content-center">
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-instagram-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;">   <i class="ri-twitter-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-youtube-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-linkedin-box-fill"></i></a>
+                </button>
+              </div>
+
+              <div class="col-12 col-md-12 col-xl-3 mt-5 mt-xl-0 ourTrainer-content">
+                <div class="img">
+                <img src="assets/images/trainers_3.png" alt="">
+                </div>
+                <h2>Ryan Mitchell</h2>
+                <p>Box Trainer</p>
+                <button class="socialMediaBtns w-100 d-flex justify-content-center">
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-instagram-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;">   <i class="ri-twitter-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-youtube-fill"></i></a>
+                  <a href="#" style="text-decoration: none;color: black;"><i class="ri-linkedin-box-fill"></i></a>
+                </button>
+              </div>
+            </div>
+          </div>
+         </div>
+         <!--====Our trainer Page Start====-->
+
+         <!--====Testimonial Start====-->
+          <div class="container-fluid p-0 pt-5 mt-5" id="testimonial">
+            <div class="testimonial d-flex justify-content-center align-items-center">
+              <div id="testimonialCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner testimonial-container  text-white text-center">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                    <img src="assets/images/Customer_img1.jpg" class="rounded-circle mb-4" alt="Jack" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h2 class="m-0">Jack</h2>
+                    <span>Customer</span>
+                    <p class="px-3 px-md-5 mt-3">
+                      " This gym has completely changed my routine.
+                      The trainers push you in a good way.
+                      I’ve gained muscle and feel more confident.
+                      It's now my favorite part of the day.
+                      Highly recommend it to anyone starting out! "
+                    </p>
+                  </div>
+          
+                  <!-- Slide 2 -->
+                    <div class="carousel-item">
+                    <img src="assets/images/Customer_img2.jpg" class="rounded-circle mb-4" alt="Emma" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h2 class="m-0">Emma</h2>
+                    <span>Customer</span>
+                    <p class="px-3 px-md-5 mt-3">
+                      " I was nervous to start, but felt welcome.
+                      Trainers are kind and guide you well.
+                      I’ve lost weight and feel so much better.
+                      It’s a place that truly lifts you up.
+                      Every session feels rewarding. "
+                    </p>
+                  </div>
+                  
+          
+                  <!-- Slide 3 -->
+                  <div class="carousel-item">
+                    <img src="assets/images/Customer_img3.jpg" class="rounded-circle mb-4" alt="Ryan" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h2 class="m-0">Ryan</h2>
+                    <span>Customer</span>
+                    <p class="px-3 px-md-5 mt-3">
+                      " I used to skip workouts, but not anymore.
+                      Great vibe, great people, and solid results.
+                      They helped me build a consistent habit.
+                      Now I actually enjoy going to the gym!
+                      Really happy with my transformation. "
+                    </p>
+                  </div>
+                </div>
+          
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+         <!--====Testimonial end====-->
+
+         <!--==== Our Blog page Start ====-->
+         <div class="container mt-5 pt-5 blog-title">
+          <h3 id="blog">Our Blog</h3>
+          <h1>STAY INFORMED ON OUR LATEST NEWS.</h1>
+         </div>
+         <div class="container-fluid mt-5 pt-5"  style="background-color: black;">
+          <div class="container">
+            <div class="blogs-container">
+              <!--Blog First-->
+              <div class="row">
+                <div class="col-12 col-xl-4 blog-content d-flex justify-content-center justify-content-sm-start">
+                  <img src="assets/images/home_blogs_img_1.png" alt="">
+                </div>
+                <div class="col-12 col-sm-10 col-xl-6 blog-content ps-3 pe-3  mt-4 mt-xl-0">
+                  <h4>DEC 20, 2023</h4>
+                  <h2>Few benefits of group and personal training</h2>
+                  <p>Serious training helps you stay strong and healthy. Our programs are
+                     designed to build consistent progress and improve your overall performance.
+                      Get personalized attention and professional guidance to reach your goals. 
+                      Every session is focused, effective, and time-efficient.</p>
+                </div>
+                <div class="col-12 col-sm-2 col-xl-2 blog-content d-flex justify-content-md-end justify-content-center align-items-center">
+                  <button>
+                    <a href="blogs.htm" style="text-decoration: none;"><i class="ri-arrow-right-up-line"></i></a>
+                  </button>
+                </div>
+              </div>
+
+
+              <!--Blog second-->
+              <div class="row mt-5 pt-5">
+                <div class="col-12 col-xl-4 blog-content d-flex justify-content-center justify-content-sm-start">
+                  <img src="assets/images/home_blogs_img_2.png" alt="">
+                </div>
+                <div class="col-12 col-sm-10 col-xl-6 blog-content ps-3 pe-3  mt-4 mt-xl-0">
+                  <h4>DEC 20, 2023</h4>
+                  <h2>Top 5 benefits of outdoor personal training</h2>
+                  <p>Stay active and healthy with dynamic training routines. Our expert team helps you improve
+                     strength, flexibility, and stamina. Every session is carefully planned for your progress. Feel confident
+                      and energized with every workout.</p>
+                </div>
+                <div class="col-12 col-sm-2 col-xl-2 blog-content d-flex justify-content-md-end justify-content-center align-items-center">
+                  <button>
+                    <a href="blogs.htm" style="text-decoration: none;"><i class="ri-arrow-right-up-line"></i></a>
+                  </button>
+                </div>
+              </div>
+
+
+             <!--Blog three-->
+              <div class="row mt-5 pt-5">
+                <div class="col-12 col-xl-4 blog-content d-flex justify-content-center justify-content-sm-start">
+                  <img src="assets/images/home_blogs_img_3.png" alt="">
+                </div>
+                <div class="ccol-12 col-sm-10 col-xl-6 blog-content ps-3 pe-3  mt-4 mt-xl-0">
+                  <h4>DEC 20, 2023</h4>
+                  <h2>How long does it take to get your fitness back?</h2>
+                  <p>Stay fit with workouts designed for balance and strength. Each session focuses on building core stability and flexibility. 
+                    Our trainers guide you with care and motivation. Achieve your goals in a supportive and energetic environment.</p>
+                </div>
+                <div class="col-12 col-sm-2 col-xl-2 blog-content d-flex justify-content-md-end justify-content-center align-items-center">
+                  <button>
+                    <a href="blogs.htm" style="text-decoration: none;"><i class="ri-arrow-right-up-line"></i></a>
+                  </button>
+                </div>
+              </div>
+
+           
+              <section class="d-flex  justify-content-center mt-5 pb-5 pt-5">
+               <a href="blogs.htm"><button class="getStartBtn">View More</button></a> 
+                <a href="blogs.htm"><button><i class="ri-arrow-right-up-line"></i></button></a>
+              </section>
+
+            </div>
+          </div>
+         </div>
+         <!--==== Our Blog page End ====-->
+
+         <!--====footer Start ====-->
+         <div class="container-fluid bg-light text-dark" id="contact">
+          <div class="container pt-5">
+            <div class="footer pb-5">
+              <h1>LET`S DISCUSS</h1>
+              <div class="row footer-container mt-5 pt-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <button class="socialMediaBtns w-100 d-flex align-items-center justify-content-center">
+                    <a href="#" style="text-decoration: none;color: black;"><i class="ri-instagram-fill"></i></a>
+                    <a href="#" style="text-decoration: none;color: black;">   <i class="ri-twitter-fill"></i></a>
+                    <a href="#" style="text-decoration: none;color: black;"><i class="ri-youtube-fill"></i></a>
+                    <a href="#" style="text-decoration: none;color: black;"><i class="ri-linkedin-box-fill"></i></a>
+                  </button> 
+                  <section class="d-flex justify-content-center align-items-center">
+                    <span style="text-align: center;">Please fell free to send us an email at <br>
+                      hello@gymort.com for any additional inquiries</span>
+                  </section>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start">
+                  
+                  <span><h2>CALL US</h2>
+                    +1 234 567 8899 <br>
+                    +1 345 678 9900</span>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start">
+                  <span><h2>WE ARE OPEN</h2>
+                    Mon - Fri: 05:00 AM - 10:00 PM <br>
+                    Sat - Sun: 05:00 AM - 01:00 PM
+                  </span>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start">
+                  <span><h2>WE ARE HERE</h2>
+                    27 West 24th St New Your, NY 10010</span>
+                </div>
+              </div>
+
+              <h5>Copyright 2025 © ~ by Bhupendra</h5>
+            </div>
+          </div>
+         </div>
+         <!--====footer End ====-->
+
+
+         <script>
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('data-target');
+              const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('offcanvasTop'));
+              offcanvas.hide();
+              setTimeout(() => {
+                document.getElementById(targetId).scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }, 300);
+            });
+          });
+        </script>
+         
+      <!--animation-js-->
+      <script src="WOW-master/WOW-master/dist/wow.js"></script>
+      <script>
+          new WOW().init();
+      </script>
+</body>
+</html>
+
+<!--https://up2client.com/envato/gymort/mainfile/index-1.html ==== https://elements.envato.com/fitness-gym-workout-html-template-gymort-6S8B3FL-->
+
+ 

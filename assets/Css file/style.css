@@ -1,0 +1,1069 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*home*/
+.banner {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0px;
+    background-attachment: fixed;
+}
+.sliderBtn
+{
+    background-color: #ff640d;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.sliderBtn-2
+{
+    background-color: #ff640d;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+.info
+{
+    height: auto;
+    width: 900px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+ 
+.info h2
+{
+    color: white;
+    font-size: 23px;
+    margin-top: 10%;
+}
+.info h1 
+{
+    font-size: 70px;
+    letter-spacing: 7px;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    margin-top: 30px;
+}
+.info .getStartBtn 
+{
+    height: 55px;
+    width: 150px;
+    background-color: #ff640d;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+.info a .getStartBtn 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+section  button
+{
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+section  button i
+{
+    font-size: 23px;
+    color: #ff640d;
+}
+section:hover .getStartBtn
+{
+    background-color: white;
+}
+section:hover a .getStartBtn 
+{
+    color: #ff640d;
+}
+section:hover button 
+{
+    background-color: #ff640d;
+}
+section:hover button i 
+{
+    color: white;
+}
+ 
+
+
+/*navbar*/
+.navbar
+{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list
+{
+    width: 60%;
+    padding: 10px 15px;
+    height: 70px;
+    margin: auto;
+    background-color: black;
+    border: 1px solid #ff640d;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 55%;
+}
+.menu-list ul
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+.menu-list ul li
+{
+    padding: 0px 10px;
+    list-style: none;
+    font-size: 20px;
+}
+.menu-list ul li::after
+{
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ff640d;
+    width: 0%;
+    padding: 2px 0px;
+    transition: all 0.4s ease-in;
+}
+.menu-list ul li:hover::after
+{
+    width: 100%;
+}
+.menu-list ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu-list ul li i
+{
+    color: #ff640d;
+    font-size: 20px;
+}
+.Toggle
+{
+    visibility: hidden;
+}
+.search-icon,.Toggle
+{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border: 2px solid #ff640d;
+    position: relative;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon i
+{
+    font-size: 25px;
+    color: black;
+}
+.Toggle i
+{
+    font-size: 25px;
+    color: black;
+}
+.modal
+{
+    background: rgba( 0, 0, 0, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+.modal-content {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-body input[type="text"] {
+    width: 50%;
+    height: 60px;
+    padding: 10px 0px 10px 10px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #ff640d;
+    background-color: transparent;
+    color: #ff640d;
+}
+.modal-body input::placeholder 
+{
+    color: white;
+}
+.SearchBtn
+{
+    width: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: auto;
+    background-color: white;
+}
+.btn-close
+{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    position: absolute;
+    right: 90px;
+    top: 70px;
+}
+.Search
+{
+    transition: all 0.3s ease-in;
+}
+.Search:hover
+{
+    background-color: black;
+    color: white;
+    border: 1px solid #ff640d;
+}
+
+/*offcanvas */
+.offcanvas 
+{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100vh;
+}
+
+.offcanvas-header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ff640d;
+    height: 90px;
+}
+.offcanvas-menu-list {
+    display: block;
+    width: 100%;
+    background-color: black;
+    border-top: 2px solid #ff640d;
+}
+.offcanvas-menu-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.offcanvas-menu-list ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ff640d;
+}
+.offcanvas-menu-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.offcanvas-menu-list ul li i {
+    color: #ff640d;
+    font-size: 18px;
+}
+
+/*What we offer */
+.offerPage h3
+{
+    color: #ff640d;
+    text-align: center;
+}
+.offerPage h1 
+{
+    font-family: "Zen Dots", sans-serif;
+    margin: 20px 0px;
+    text-align: center;
+    font-weight:700;
+    letter-spacing: 3px;
+    max-width: 100%;
+}
+.offerPage .offerContent 
+{
+    border: 1px solid #ff640d;
+    transition: all 0.3s ease;
+}
+.offerPage .offerContent:hover 
+{
+    height: auto;
+    background-color: gainsboro;
+}
+.offerPage .offerContent i
+{   
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px 0px;
+    transition: all  0.3s ease-in-out;
+}
+.offerPage .offerContent:hover i 
+{
+    color: #ff640d;
+    font-size: 40px;
+}
+.offerPage .offerContent section h2
+{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+.offerPage .offerContent section p 
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/*Demo Bokking Page */
+.demoBooking .demoBooking-content h3 {
+    color: white;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+.demoBooking .demoBooking-content p
+{
+    color: white;
+    font-size: 18px;
+}
+.demoBooking .demoBooking-content-img 
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/group_trining_img.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+        transition: all 0.4s ease-in-out;   
+}
+.demoBooking .demoBooking-content-img2 
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/presonal_trining_img.png');
+    background-position: center;
+    background-size: co ver;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+ 
+.demoBooking .demoBooking-content-img section 
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: "Zen Dots", sans-serif;
+    padding: 0px 30px;
+
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.demoBooking .demoBooking-content-img:hover  section
+{
+    opacity: 1;
+    visibility: visible;
+}
+.demoBooking .demoBooking-content-img section a 
+{
+    text-decoration: none;
+    color: #ff640d;
+    font-size: 30px;
+}
+.demoBooking .demoBooking-content-img2 section 
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: "Zen Dots", sans-serif;
+    padding: 0px 30px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.demoBooking .demoBooking-content-img2:hover  section
+{
+    opacity: 1;
+    visibility: visible;
+}
+.demoBooking .demoBooking-content-img2 section a 
+{
+    text-decoration: none;
+    color: #ff640d;
+    font-size: 30px;
+}
+.demoBooking .demoBooking-content-img section h2 
+{
+    color: white;
+}
+.demoBooking .demoBooking-content-img2 section h2 
+{
+
+    color: white;
+}
+ .demoBooking-content .bookingBtn 
+{
+    height: 55px;
+    width: 150px;
+    background-color: #ff640d;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+.demoBooking-content .bookingBtn a 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+section  button
+{
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+section  button i
+{
+    font-size: 23px;
+    color: #ff640d;
+}
+section:hover .bookingBtn
+{
+    background-color: white;
+}
+section:hover .bookingBtn a
+{
+    color: #ff640d;
+}
+section:hover button 
+{
+    background-color: #ff640d;
+}
+section:hover button i 
+{
+    color: white;
+}
+
+
+/*Our Process page*/
+.ourProcess h3
+{
+    color: #ff640d;
+    text-align: center;
+}
+.ourProcess h1 
+{
+    font-family: "Zen Dots", sans-serif;
+    margin: 20px 0px;
+    text-align: center;
+    font-weight:700;
+    letter-spacing: 3px;
+    max-width: 100%;
+}
+.ourProcess p 
+{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.circleBorder 
+{
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    border: 3px gray dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.circleBorder:hover
+{
+    border: 3px #ff640d dashed;
+
+}
+.circleBorder .img 
+{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circleBorder .img img 
+{
+    height: 100%;
+    width: 115%;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.circleBorder .img img:hover
+{
+    height: 120%;
+    width: 145%;
+    filter: grayscale(90%);
+}
+.ourProcess .ourProcess-content h2 
+{
+    font-family: "Zen Dots", sans-serif;
+    font-size: 23px ;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.ourProcess .ourProcess-content h5
+{
+    text-align: center;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 25px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+/*Video Player Banner */
+.videoPlayerBanner 
+{
+    height: 600px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)  ) , url('../images/video_img_1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.play-button-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .neon-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #ff640d;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #111 60%, #0d0d0d 100%);
+    position: relative;
+  }
+
+  .play-icon {
+    width: 0;
+    height: 0;
+    border-left: 30px solid #ff640d;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transform: translateX(5px);
+  }
+
+  .glossy {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,255,255,0));
+    pointer-events: none;
+   
+  }
+
+  .rotating-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rotating-text svg {
+    width: 87%;
+    height: 87%;
+    transform: rotate(-90deg);
+  }
+
+  .rotating-text text {
+    fill: white;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 3px;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*Achivements*/
+.Achivements 
+{
+    justify-content: space-between;
+    height: auto;
+}
+  .Achivements .Achivements-content
+{
+  
+    height: auto;
+ }
+.Achivements  .Achivements-content h1
+{
+    font-size: 95px;
+    font-family: "Zen Dots", sans-serif;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    -webkit-text-stroke: 3px rgb(239, 239, 239);
+    margin: 0%;
+}
+.Achivements  .Achivements-content span
+{
+    font-family: "Zen Dots", sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 70px;
+     position: relative;
+     top: 33%;
+}
+.Achivements  .Achivements-content p 
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/*Our trainers*/
+.ourTrainer h3
+{
+    color: #ff640d;
+    text-align: center;
+}
+.ourTrainer h1 
+{
+    font-family: "Zen Dots", sans-serif;
+    margin: 20px 0px;
+    text-align: center;
+    font-weight:700;
+    letter-spacing: 3px;
+    max-width: 100%;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content 
+{
+    height: auto;
+    padding: 10px 15px;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content .img
+{
+    margin: auto;
+    height: auto;
+    width: 0px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background: rgba(30, 30, 30, 0.8);
+    box-shadow: 0 10px 72px 0 rgba(17, 20, 60, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.4s ease-in-out;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content .img:hover
+{
+    width: 300px;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content .img img 
+{
+    border-bottom: 5px solid #ff640d;
+    filter: drop-shadow(2px 2px 10px  black);
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content h2 
+{
+    margin: 20px  0px 10px 0px;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 27px;
+    text-align: center;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content p
+{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content .socialMediaBtns 
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content .socialMediaBtns i 
+{
+    font-size: 23px;
+    margin: 5px;
+    transition: all 0.3s ease-out;
+}
+.ourTrainer .ourTrainer-container .ourTrainer-content .socialMediaBtns i:hover 
+{
+    color: #ff640d;
+}
+
+
+/*Testimonial */
+.testimonial 
+{
+    height: auto;
+    width: 100%;
+    background-image:url('../images/testimonials-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-attachment: fixed;
+}
+.testimonial  .testimonial-container
+{
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 150px 0px;
+    background: rgba( 0, 0, 0, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.testimonial  .testimonial-container img:hover
+{
+    border: 3px solid white;
+    filter: drop-shadow(1px 1px 10px white);
+
+}
+.testimonial  .testimonial-container img
+{
+    border: 3px solid #ff640d;
+    filter: drop-shadow(1px 1px 10px #ff640d);
+    transition: all 0.4s ease-in-out;
+}
+.testimonial  .testimonial-container h2 
+{
+    font-family: "Zen Dots", sans-serif;
+    letter-spacing: 3px;
+    color: #ff640d;
+}
+.testimonial  .testimonial-container p
+{   
+    width: 70%;
+    margin: auto;
+    font-size: 24px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    
+}
+
+
+
+/* Our Blogs page*/
+.blog-title h3
+{
+    margin-top: 20px;
+    color: #ff640d;
+    text-align: center;
+}
+.blog-title h1 
+{
+    font-family: "Zen Dots", sans-serif;
+    margin: 10px 0px;
+    text-align: center;
+    font-weight:700;
+    letter-spacing: 3px;
+    max-width: 100%;
+    line-height: 60px;
+}
+.blogs-container .blog-content img 
+{
+    border: 2px solid #ff640d;
+    transition: filter 0.6s ease, transform 0.6s ease;
+    filter: drop-shadow(1px 1px 10px #ff640d) grayscale(0%);
+}
+
+.blogs-container .blog-content img:hover
+ {
+    filter: drop-shadow(1px 1px 10px #ff640d) grayscale(100%);
+}
+.blogs-container .blog-content h4
+{
+    color: gainsboro;
+    font-family: "Zen Dots", sans-serif;
+}   
+.blogs-container .blog-content h2
+{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 50px;
+    transition: all 0.4s ease-in-out;
+}   
+.blogs-container .blog-content h2:hover 
+{
+    color: #ff640d;
+}
+.blogs-container .blog-content p
+{
+    margin-top: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-size: 18px;
+}
+.blogs-container .blog-content button 
+{
+    height: 60px;
+    width: 60px;
+    outline: none;
+    border: 2px solid #ff640d;
+    background-color: transparent;
+    transition: all ease-in 0.4s;
+}
+.blogs-container .blog-content button:hover 
+{
+    border: 2px solid white;
+}
+.blogs-container .blog-content button:hover i 
+{
+    color: white;
+}
+.blogs-container .blog-content button i 
+{
+    color: #ff640d;
+    font-size: 30px;
+    transition: all ease-in 0.4s;
+
+}
+.blogs-container section .getStartBtn 
+{
+    height: 55px;
+    width: 150px;
+    background-color: #ff640d;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+.blogs-container section a .getStartBtn  
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+section  button
+{
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+section  button i
+{
+    font-size: 23px;
+    color: #ff640d;
+}
+section:hover .getStartBtn
+{
+    background-color: white;
+}
+section:hover a .getStartBtn 
+{
+    color: #ff640d;
+}
+section:hover button 
+{
+    background-color: #ff640d;
+}
+section:hover button i 
+{
+    color: white;
+}
+ 
+
+
+/*footer */
+.footer h1 
+{
+    font-size: 127px;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 50px;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+}
+.footer h1:hover 
+{
+    -webkit-text-stroke: 1px #ff640d;
+}
+.footer .footer-container span
+{
+    color: gray;
+}
+.footer .footer-container h2
+{
+    text-align: center;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+.footer .footer-container .socialMediaBtns 
+{
+    display: flex;
+    align-items: start;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom:15px;
+}
+.footer .footer-container .socialMediaBtns i 
+{
+    font-size: 23px;
+    margin: 5px;
+    transition: all 0.3s ease-out;
+}
+.footer .footer-container  .socialMediaBtns i:hover 
+{
+    color: #ff640d;
+}
+.footer h5 
+{
+    margin-top: 80px;
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+    
+}

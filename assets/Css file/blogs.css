@@ -1,0 +1,437 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/*blog title*/
+.blog-heading 
+{
+    background-image: url('../images/blog-bg.jpg');
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-heading section
+{
+    width: 90%;
+    margin:150px 0px 0px 0px;
+}
+.blog-heading h6
+{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+   
+}
+.blog-heading  h1 
+{
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+    font-size: 55px;
+}
+
+
+/*navbar*/
+.navbar
+{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list
+{
+    width: 60%;
+    padding: 10px 15px;
+    height: 70px;
+    margin: auto;
+    background-color: black;
+    border: 1px solid #ff640d;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 55%;
+}
+.menu-list ul
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+.menu-list ul li
+{
+    padding: 0px 10px;
+    list-style: none;
+    font-size: 20px;
+}
+.menu-list ul li::after
+{
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ff640d;
+    width: 0%;
+    padding: 2px 0px;
+    transition: all 0.4s ease-in;
+}
+.menu-list ul li:hover::after
+{
+    width: 100%;
+}
+.menu-list ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu-list ul li i
+{
+    color: #ff640d;
+    font-size: 20px;
+}
+.Toggle
+{
+    visibility: hidden;
+}
+.search-icon,.Toggle
+{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border: 2px solid #ff640d;
+    position: relative;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon i
+{
+    font-size: 25px;
+    color: black;
+}
+.Toggle i
+{
+    font-size: 25px;
+    color: black;
+}
+.modal
+{
+    background: rgba( 0, 0, 0, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+.modal-content {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-body input[type="text"] {
+    width: 50%;
+    height: 60px;
+    padding: 10px 0px 10px 10px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #ff640d;
+    background-color: transparent;
+    color: #ff640d;
+}
+.modal-body input::placeholder 
+{
+    color: white;
+}
+.SearchBtn
+{
+    width: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: auto;
+    background-color: white;
+}
+.btn-close
+{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    position: absolute;
+    right: 90px;
+    top: 70px;
+}
+.Search
+{
+    transition: all 0.3s ease-in;
+}
+.Search:hover
+{
+    background-color: black;
+    color: white;
+    border: 1px solid #ff640d;
+}
+
+/*offcanvas */
+.offcanvas 
+{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100vh;
+}
+
+.offcanvas-header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ff640d;
+    height: 90px;
+}
+.offcanvas-menu-list {
+    display: block;
+    width: 100%;
+    background-color: black;
+    border-top: 2px solid #ff640d;
+}
+.offcanvas-menu-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.offcanvas-menu-list ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ff640d;
+}
+.offcanvas-menu-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.offcanvas-menu-list ul li i {
+    color: #ff640d;
+    font-size: 18px;
+}
+
+
+
+
+/* Our Blogs page*/
+.blog-title h3
+{
+    margin-top: 20px;
+    color: #ff640d;
+    text-align: center;
+}
+.blog-title h1 
+{
+    font-family: "Zen Dots", sans-serif;
+    margin: 10px 0px;
+    text-align: center;
+    font-weight:700;
+    letter-spacing: 3px;
+    max-width: 100%;
+    line-height: 60px;
+}
+.blogs-container .blog-content img 
+{
+    border: 2px solid #ff640d;
+    transition: filter 0.6s ease, transform 0.6s ease;
+    filter: drop-shadow(1px 1px 10px #ff640d) grayscale(0%);
+}
+
+.blogs-container .blog-content img:hover
+ {
+    filter: drop-shadow(1px 1px 10px #ff640d) grayscale(100%);
+}
+.blogs-container .blog-content h4
+{
+    color: gray;
+    font-family: "Zen Dots", sans-serif;
+}   
+.blogs-container .blog-content h2
+{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 50px;
+    transition: all 0.4s ease-in-out;
+}   
+.blogs-container .blog-content h2:hover 
+{
+    color: #ff640d;
+}
+.blogs-container .blog-content p
+{
+    margin-top: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    color: black;
+    font-size: 18px;
+}
+.blogs-container .blog-content button 
+{
+    height: 60px;
+    width: 60px;
+    outline: none;
+    border: 2px solid #ff640d;
+    background-color: transparent;
+    transition: all ease-in 0.4s;
+}
+.blogs-container .blog-content button:hover 
+{
+    border: 2px solid black;
+}
+.blogs-container .blog-content button:hover i 
+{
+    color: black;
+}
+.blogs-container .blog-content button i 
+{
+    color: #ff640d;
+    font-size: 30px;
+    transition: all ease-in 0.4s;
+
+}
+.blogs-container section .getStartBtn 
+{
+    height: 55px;
+    width: 150px;
+    background-color: #ff640d;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+.blogs-container section a .getStartBtn  
+{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+section  button
+{
+    height: 55px;
+    width: 55px;
+    background-color: black;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+section  button i
+{
+    font-size: 23px;
+    color: #ff640d;
+}
+section:hover .getStartBtn
+{
+    background-color: black;
+}
+section:hover a .getStartBtn 
+{
+    color: #ff640d;
+}
+section:hover button 
+{
+    background-color: #ff640d;
+}
+section:hover button i 
+{
+    color: black;
+}
+ 
+
+
+
+/*footer */
+.footer h1 
+{
+    font-size: 127px;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 50px;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+.footer h1:hover 
+{
+    -webkit-text-stroke: 1px #ff640d;
+}
+.footer .footer-container span
+{
+    color: lightgray;
+}
+.footer .footer-container h2
+{
+    text-align: center;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.footer .footer-container .socialMediaBtns 
+{
+    display: flex;
+    align-items: start;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom:15px;
+}
+.footer .footer-container .socialMediaBtns i 
+{
+    font-size: 23px;
+    margin: 5px;
+    transition: all 0.3s ease-out;
+}
+.footer .footer-container  .socialMediaBtns i:hover 
+{
+    color: #ff640d;
+}
+.footer h5 
+{
+    margin-top: 80px;
+    text-align: center;
+    color: lightgray;
+    font-weight: 400;
+    
+}
